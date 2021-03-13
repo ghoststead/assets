@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="app-wrap d-flex flex-row flex-wrap">
         <router-view />
     </div>
 </template>

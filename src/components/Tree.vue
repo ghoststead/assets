@@ -1,6 +1,6 @@
 <template>
     <div @keyup="keyup(key)">
-        <ul class="list-group">
+        <ul class="list-group list-group-borderless">
             <tree-entry
                 v-for="(entry, i) in entries"
                 :key="entry.name"
@@ -42,5 +42,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

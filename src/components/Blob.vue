@@ -28,28 +28,28 @@
                 </div>
             </div>
         </div>
-        <div v-if="info">
-            <dl class="row">
-                <dt class="col-6 text-end">
+        <div v-if="info" class="border border-bottom-0 info">
+            <dl class="row g-0 m-0">
+                <dt class="col-6 px-3 py-2 border-bottom m-0">
                     Mime-Type
                 </dt>
-                <dd class="col-6">
+                <dd class="col-6 px-3 py-2 border-bottom m-0">
                     {{ mimeType || 'application/octet-stream' }}
                 </dd>
-                <dt class="col-6 text-end">
+                <dt class="col-6 px-3 py-2 border-bottom m-0">
                     Size (bytes)
                 </dt>
-                <dd class="col-6">
+                <dd class="col-6 px-3 py-2 border-bottom m-0">
                     {{ entry.size }}
                 </dd>
                 <template
                     v-for="(value, key) in info"
                     :key="key"
                 >
-                    <dt class="col-6 text-end">
+                    <dt class="col-6 px-3 py-2 border-bottom m-0">
                         {{ key }}
                     </dt>
-                    <dd class="col-6">
+                    <dd class="col-6 px-3 py-2 border-bottom m-0">
                         {{ value }}
                     </dd>
                 </template>
@@ -112,11 +112,14 @@ export default {
 </script>
 
 <style scoped>
-.d-flex {
-    min-height: 300px;
-}
+    .info {
+        max-width: 420px;
+    }
+    .d-flex {
+        min-height: 300px;
+    }
 
-img {
-    max-width: 100%;
-}
+    img {
+        max-width: 100%;
+    }
 </style>
