@@ -28,7 +28,10 @@
                 </div>
             </div>
         </div>
-        <div v-if="info" class="border border-bottom-0 info">
+        <div
+            v-if="info"
+            class="border border-bottom-0 info"
+        >
             <dl class="row g-0 m-0">
                 <dt class="col-6 px-3 py-2 border-bottom m-0">
                     Mime-Type

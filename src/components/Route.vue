@@ -1,7 +1,10 @@
 <template>
     <div class="navbar-top bg-dark px-3 py-2">
         <div class="d-flex justify-content-between align-items-center">
-            <a href="#" class="navbar-brand text-white fw-bold">Ghoststead</a>
+            <a
+                href="#"
+                class="navbar-brand text-white fw-bold"
+            >Ghoststead</a>
             <div class="ms-auto">
                 <span class="px-2 rounded-pill bg-danger text-white d-inline-block fw-bold">v1.2.0</span>
             </div>

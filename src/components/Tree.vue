@@ -5,6 +5,8 @@
                 v-for="(entry, i) in entries"
                 :key="entry.name"
                 :name="entry.name"
+                :type="entry.type"
+                :size="entry.size"
                 :path="entry.path"
                 :active="i === index"
             />
