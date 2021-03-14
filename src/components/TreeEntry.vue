@@ -106,6 +106,8 @@ svg path {
 a {
     color: #222;
     padding-left: 7px;
+    flex: 0 0 calc(100% - 100px);
+    max-width: calc(100% - 100px);
 }
 
 a:after {

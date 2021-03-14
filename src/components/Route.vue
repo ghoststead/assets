@@ -18,7 +18,7 @@
             :index="index"
         />
     </div>
-    <div class="right-area">
+    <div class="right-area col">
         <h1 class="border-bottom h3 pb-3 mb-3">
             /{{ path }}
         </h1>
@@ -79,16 +79,34 @@ export default {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .left-area {
-        flex: 0 0 400px;
-        max-width: 400px;
-        min-height: calc(100vh - 56px);
-        max-height: calc(100vh - 56px);
-        overflow-y: auto;
+    @media(max-width: 767px){
+        .left-area {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    @media(min-width: 768px){
+        .left-area {
+            min-height: calc(100vh - 56px);
+            max-height: calc(100vh - 56px);
+            overflow-y: auto;
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+    }
+    @media(min-width: 992px){
+        .left-area {
+            flex: 0 0 300px;
+            max-width: 300px;
+        }
+    }
+    @media(min-width: 1200px){
+        .left-area {
+            flex: 0 0 400px;
+            max-width: 400px;
+        }
     }
     .right-area {
-        flex: 0 0 calc(100% - 400px);
-        max-width: calc(100% - 400px);
         padding: 25px;
         min-height: calc(100vh - 56px);
         max-height: calc(100vh - 56px);
