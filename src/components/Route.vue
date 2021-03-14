@@ -1,10 +1,12 @@
 <template>
-    <div class="navbar-top bg-dark px-3 py-2">
+    <div class="navbar-top bg-white shadow-sm px-3 py-2 position-relative">
         <div class="d-flex justify-content-between align-items-center">
             <a
                 href="#"
                 class="navbar-brand text-white fw-bold"
-            >Ghoststead</a>
+            >
+                <img height="40" src="">
+            </a>
             <div class="ms-auto">
                 <span class="px-2 rounded-pill bg-danger text-white d-inline-block fw-bold">v1.2.0</span>
             </div>
@@ -78,6 +80,7 @@ export default {
     .navbar-top {
         flex: 0 0 100%;
         max-width: 100%;
+        z-index: 5;
     }
     @media(max-width: 767px){
         .left-area {

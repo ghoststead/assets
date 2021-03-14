@@ -9,7 +9,7 @@
         >
         <router-link
             :to="'/' + path"
-            :class="{'text-white': active}"
+            :class="{'text-dark': active}"
         >
             {{ name }}
         </router-link>
@@ -125,7 +125,7 @@ span {
     padding: 2px 8px;
 }
 
-.active span {
-    color: #fff;
+.active {
+    background: #fff;
 }
 </style>

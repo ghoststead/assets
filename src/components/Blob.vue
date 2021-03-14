@@ -1,11 +1,7 @@
 <template>
     <!-- eslint-disable vue/no-v-html -->
     <div>
-        <a
-            v-if="content"
-            :href="'data:'+mimeType+';base64, ' + content.toString('base64')"
-            :download="entry.name"
-        >Download</a>
+        
         <div class="text-center my-3 bg-light d-flex flex-column justify-content-center">
             <div
                 v-if="error"
@@ -58,6 +54,12 @@
                 </template>
             </dl>
         </div>
+        <a
+            class="btn btn-primary mt-3"
+            v-if="content"
+            :href="'data:'+mimeType+';base64, ' + content.toString('base64')"
+            :download="entry.name"
+        >Download</a>
     </div>
 </template>
 
